@@ -31,5 +31,5 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
   
-if _name_ == "_main_":
+if _name_ == "__main__":
   app.run(debug=True)
