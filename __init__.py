@@ -15,7 +15,7 @@ def hello_world():
 def MaPremiereAPI():
     return render_template("Contact.html")
 
-@app.route('/histogramme/')
+@app.route('/paris/')
 def meteo():
     response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
     raw_content = response.read()
