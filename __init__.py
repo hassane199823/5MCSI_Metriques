@@ -5,7 +5,7 @@ from datetime import datetime
 from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
-app = Flask(_name_)                                                                                                                  
+app = Flask(__name__)                                                                                                                  
                                                                                                                                        
 @app.route("/Contact/")
 def contact():
@@ -31,5 +31,5 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
   
-if _name_ == "_main_":
+if __name__ == "__main__":
   app.run(debug=True)
