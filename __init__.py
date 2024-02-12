@@ -5,15 +5,15 @@ from datetime import datetime
 from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
-app = Flask(__name__)                                                                                                            
+app = Flask(_name_)                                                                                                                  
                                                                                                                                        
-@app.route("/contact/")
+@app.route("/Contact/")
 def contact():
-    return render_template("contact.HTML")
+    return render_template("Contact.HTML")
 
 @app.route('/')
 def hello_world():
-    return render_template('hello.html') #mohamedHassan
+    return render_template('hello.html')
 
 @app.route('/paris/')
 def meteo():
@@ -31,5 +31,5 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
   
-if _name_ == "__main__":
+if _name_ == "_main_":
   app.run(debug=True)
