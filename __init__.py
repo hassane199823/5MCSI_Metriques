@@ -15,9 +15,9 @@ def hello_world():
 def MaPremiereAPI():
     return render_template("Contact.html")
 
-@app.route('/paris/')
+@app.route('/histogramme/')
 def meteo():
-    response = urlopen('https://api.openweathermap.org/data/2.5/forecast/daily?q=Paris,fr&cnt=16&appid=bd5e378503939ddaee76f12ad7a97608')
+    response = urlopen('https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsamples.openweathermap.org%2Fdata%2F2.5%2Fforecast%3Flat%3D0%26lon%3D0%26appid%3Dxxx&data=05%7C02%7Csanvaraly1%40myges.fr%7C30939271ffac424e273a08dc2bdfa3f1%7Cc371d4f5b34f4b069e66517fed904220%7C0%7C0%7C638433486747160132%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=HrfpoQQvCQlv9%2F1Ns5Z9VYNNBUEVb5fAiBdre%2FkzeRE%3D&reserved=0')
     raw_content = response.read()
     json_content = json.loads(raw_content.decode('utf-8'))
     results = []
