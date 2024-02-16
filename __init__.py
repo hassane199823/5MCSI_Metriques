@@ -31,7 +31,7 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
 
-@app.route('/commits/')
+"""@app.route('/commits/')
 def commits():
     # Utilisation de l'API GitHub pour extraire les données sur les commits
     response = urlopen('https://api.github.com/repos/OpenRSI/5MCSI_Metriques/commits')
@@ -51,7 +51,7 @@ def commits():
     # Création d'une liste de tuples (minute, nombre de commits) pour le graphique
     data_for_chart = [{'minute': minute, 'commits': commits_per_minute[minute]} for minute in commits_per_minute]
 
-    return jsonify(data_for_chart)
+    return jsonify(data_for_chart)"""
   
 if __name__ == "__main__":
   app.run(debug=True)
