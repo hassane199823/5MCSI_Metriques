@@ -36,7 +36,7 @@ def commits():
     # Utilisation de l'API GitHub pour extraire les données sur les commits
     response = urlopen('https://api.github.com/repos/OpenRSI/5MCSI_Metriques/commits')
     raw_content = response.read()
-    #json_content = json.loads(raw_content.decode('utf-8'))
+    json_content = json.loads(raw_content.decode('utf-8'))
 
     # Initialisation d'un dictionnaire pour stocker le nombre de commits par minute
     commits_per_minute = {}
